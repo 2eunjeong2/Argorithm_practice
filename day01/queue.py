@@ -5,13 +5,13 @@
 - BFS
 ''' 
 
-# enquene : 뒤에 데이터 추가 
-# dequene : 앞의 데이터를 꺼냄 
+# enquene : 뒤에 데이터 추가
+# dequene : 앞의 데이터를 꺼냄
 
 from collections import deque
 
 queue = deque() # deque()함수 : 앞의 데이터를 꺼냄
-queue.append('A') # enqueue A -> deque(['A'])  
+queue.append('A') # enqueue A -> deque(['A'])
 queue.append('B') # enqueue B -> deque(['A','B'])
 queue.append('C') # enqueue C -> deque (['A','B','C'])
 print(queue.popleft()) # -> 'A' (가장 먼저 넣은 A가 먼저나옴)
