@@ -95,7 +95,9 @@ print_all_friends_broken(fr_info, 'Tom')
 
 # 질문 4-2 : done 집합은 어떤 역할을 하나요?
 # 답 : 중복 방지 역할
+# 이미 확인한 사람을 기록하여 같은 사람을 다시 qu에 넣지 않도록 방지.
 
 # 질문 4-3 : 로봇 경로 탐색에서 done에 해당하는 것은?
 # 답 : 로봇이 이미 탐색한 위치 목록
 #      move_base 패키지안의 Closed List와 같은 역할을 함
+# costmap에서 이미 탐색한 셀을 기록하는 visited 배열. 같은 셀은 무한히재탐색 합니다.
